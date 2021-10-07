@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./display.css";
 import Healthlist from "../cardlists/Healthlist";
@@ -6,10 +6,15 @@ import Maplist from "../cardlists/Maplist";
 import Misclist from "../cardlists/Misclist";
 import Weaponlist from "../cardlists/Weaponlist";
 import Profile from "../profile/Profile";
+import { findUserData } from "../../services/API_service";
 
-function Display(props: any) {
-  let isAuthenticated: Boolean = true;
-  let id: number = 1;
+function Display({ id }: { id: number }) {
+  const [userDataState, setUserDataState] = useState({});
+
+  useEffect(() => {
+    findUserData(id).then((userData) => setUserDataState(userData));
+  }, []);
+  console.log(userDataState);
 
   return (
     <div>

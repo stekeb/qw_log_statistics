@@ -7,14 +7,14 @@ import Display from "../../components/display/Display";
 import Logstable from "../../components/logstable/Logstable";
 
 function Main(props: any) {
-  let isAuthenticated: Boolean = true;
+  //let isAuthenticated: Boolean = true;
   let id: number = 1;
   return (
     <Router>
       <div>
         <Banner />
         <Navbar />
-        <Display />
+        <Display id={id} />
         <Logstable />
       </div>
     </Router>
