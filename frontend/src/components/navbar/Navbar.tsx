@@ -1,10 +1,10 @@
-import React from 'react';
-import './navbar.css';
+import React from "react";
+import "./navbar.css";
 
 function Navbar(props: any) {
   return (
     <div>
-     <h2>Navbar</h2> 
+      <h2 className="test">Navbar</h2>
     </div>
   );
 }

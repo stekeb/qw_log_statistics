@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 function Register(props: any) {
   return (
     <div>
-    <h2>Register</h2>  
+      <h2>Register</h2>
     </div>
   );
 }

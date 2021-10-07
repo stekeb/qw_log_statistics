@@ -1,10 +1,10 @@
-import React from 'react';
-import './banner.css';
+import React from "react";
+import "./banner.css";
 
 function Banner(props: any) {
   return (
     <div>
-     <h2>Banner</h2> 
+      <h2>Banner</h2>
     </div>
   );
 }

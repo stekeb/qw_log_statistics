@@ -1,12 +1,8 @@
-import React from 'react';
-import './cards.css';
+import React from "react";
+import "./cards.css";
 
 function Mapcard(props: any) {
-  return (
-    <div>
-      
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Mapcard;
