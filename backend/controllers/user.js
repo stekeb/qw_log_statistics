@@ -25,15 +25,8 @@ async function createUser(req, res) {
   try {
     const { userName, password, eMail } = req.body;
     const newUser = await User.create({ userName, password, eMail });
-    const singleUser = await User.findOne({
-      where: {
-        userName: userName,
-        password: password,
-      },
-      include: [{ model: Log }, { model: Name }],
-    });
     res.status(201);
-    res.json(singleUser);
+    res.json(newUser);
   } catch (error) {
     res.status(500);
     console.log(error);
