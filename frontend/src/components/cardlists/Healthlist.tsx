@@ -3,7 +3,7 @@ import "./cardlists.css";
 import Healthcard from "../cards/Healthcard";
 
 function Healthlist(props: any) {
-  return <div></div>;
+  return <div>Healthlist</div>;
 }
 
 export default Healthlist;

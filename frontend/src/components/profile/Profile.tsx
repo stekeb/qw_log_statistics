@@ -2,7 +2,7 @@ import React from "react";
 import "./profile.css";
 
 function Profile(props: any) {
-  return <div></div>;
+  return <div>Profile</div>;
 }
 
 export default Profile;

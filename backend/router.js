@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { getAllData, createUser } = require("./controllers/user");
 const { createLog, place } = require("./controllers/logs");
-const {createName} = require("./controllers/names");
+const { createName } = require("./controllers/names");
 
 router.get("/user/:id", getAllData);
 

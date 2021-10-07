@@ -3,7 +3,7 @@ import "./cardlists.css";
 import Mapcard from "../cards/Mapcard";
 
 function Maplist(props: any) {
-  return <div></div>;
+  return <div>Maplist</div>;
 }
 
 export default Maplist;

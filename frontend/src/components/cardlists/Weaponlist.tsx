@@ -3,7 +3,7 @@ import "./cardlists.css";
 import Weaponcard from "../cards/Weaponcard";
 
 function Weaponlist(props: any) {
-  return <div></div>;
+  return <div>Weaponlist</div>;
 }
 
 export default Weaponlist;
